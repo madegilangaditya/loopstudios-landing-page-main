@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,300;1,300&display=swap');
+
+body{
+    @apply text-[15px] text-darkGray ;
+}
+
+.container{
+    @apply px-[30px];
+}

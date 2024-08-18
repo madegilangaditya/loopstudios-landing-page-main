@@ -9,53 +9,163 @@
   
   <title>Frontend Mentor | Loopstudios landing page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  About
-  Careers
-  Events
-  Products
-  Support
+  <main>
+    <header class="header-fixed">
+      <div class="container">
+        <div class="nav-wrap">
+          <a href="#" class="logo-wrap">
+            <img src="./images/logo.svg" alt="logo">
+          </a>
+          <a href="#" class="mobile-menu-hamburger">
+            <img src="./images/icon-hamburger.svg" alt="menu Open" class="menu-open">
+            <img src="./images/icon-close.svg" alt="menu Open" class="menu-close">
+          </a>
+          <nav class="main-menu">
+            <ul class="main-menu-wrap">
+              <li class="menu-item"><a href="#">About</a></li>
+              <li class="menu-item"><a href="#">Careers</a></li>
+              <li class="menu-item"><a href="#">Events</a></li>
+              <li class="menu-item"><a href="#">Products</a></li>
+              <li class="menu-item"><a href="#">Support</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
 
-  Immersive experiences that deliver
+    <!-- banner -->
+    <section class="banner">
+      <img src="./images/mobile/image-hero.jpg" alt="Mobile banner" class="banner-img lg:hidden">
+      <img src="./images/desktop/image-hero.jpg" alt="Desktop banner" class="banner-img hidden lg:block">
+      <div class="container">
+        <div class="title-wrap">
+          <h1>Immersive experiences that deliver</h1>
+        </div>
+      </div>
+    </section>
 
-  The leader in interactive VR
+    <!-- Two column image -->
+    <section class="two-col-image">
+      <div class="container">
+        <div class="column">
+          <div class="col-left">
+            <img src="./images/mobile/image-interactive.jpg" alt="interactive" class="lg:hidden">
+            <img src="./images/desktop/image-interactive.jpg" alt="interactive" class="hidden lg:block">
+          </div>
+          <div class="col-right">
+            <div class="text-wrap">
+              <h2>The leader in interactive VR</h2>
+              <p>Founded in 2011, Loopstudios has been producing world-class virtual reality 
+                projects for some of the best companies around the globe. Our award-winning 
+                creations have transformed businesses through digital experiences that bind 
+                to their brand.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  Founded in 2011, Loopstudios has been producing world-class virtual reality 
-  projects for some of the best companies around the globe. Our award-winning 
-  creations have transformed businesses through digital experiences that bind 
-  to their brand.
+    <!-- card section -->
+    <section class="cards">
+      <div class="container">
+        <div class="title-wrap">
+          <h2>Our creations</h2>
+          <a href="#" class="btn">See all</a>
+        </div>
+        <div class="cards-wrap">
+          <a href="#" class="card-item">
+            <img src="./images/mobile/image-deep-earth.jpg" alt="Deep Earth" class="lg:hidden">
+            <img src="./images/desktop/image-deep-earth.jpg" alt="Deep Earth" class="hidden lg:block">
+            <span>Deep earth</span>
+          </a>
+          <a href="#" class="card-item">
+            <img src="./images/mobile/image-night-arcade.jpg" alt="Night Arcade" class="lg:hidden">
+            <img src="./images/desktop/image-night-arcade.jpg" alt="Night Arcade" class="hidden lg:block">
+            <span>Night arcade</span>
+          </a>
+          <a href="#" class="card-item">
+            <img src="./images/mobile/image-soccer-team.jpg" alt="Soccer Team VR" class="lg:hidden">
+            <img src="./images/desktop/image-soccer-team.jpg" alt="Soccer Team VR" class="hidden lg:block">
+            <span>Soccer team VR</span>
+          </a>
+          <a href="#" class="card-item">
+            <img src="./images/mobile/image-grid.jpg" alt="The Grid" class="lg:hidden">
+            <img src="./images/desktop/image-grid.jpg" alt="The Grid" class="hidden lg:block">
+            <span>The grid</span>
+          </a>
+          <a href="#" class="card-item">
+            <img src="./images/mobile/image-from-above.jpg" alt="From Up Above VR" class="lg:hidden">
+            <img src="./images/desktop/image-from-above.jpg" alt="From Up Above VR" class="hidden lg:block">
+            <span>From up above VR</span>
+          </a>
+          <a href="#" class="card-item">
+            <img src="./images/mobile/image-pocket-borealis.jpg" alt="Pocket borealis" class="lg:hidden">
+            <img src="./images/desktop/image-pocket-borealis.jpg" alt="Pocket borealis" class="hidden lg:block">
+            <span>Pocket borealis</span>
+          </a>
+          <a href="#" class="card-item">
+            <img src="./images/mobile/image-curiosity.jpg" alt="The curiosity" class="lg:hidden">
+            <img src="./images/desktop/image-curiosity.jpg" alt="The curiosity" class="hidden lg:block">
+            <span>The curiosity</span>
+          </a>
+          <a href="#" class="card-item">
+            <img src="./images/mobile/image-fisheye.jpg" alt="Make it fisheye" class="lg:hidden">
+            <img src="./images/desktop/image-fisheye.jpg" alt="Make it fisheye" class="hidden lg:block">
+            <span>Make it fisheye</span>
+          </a>
+        </div>
+      </div>
+    </section>
 
-  Our creations
+    <footer>
+      <div class="container">
+        <div class="column">
+          <div class="col-left">
+            <img src="./images/logo.svg" alt="Logo">
+            <nav class="main-menu footer-menu">
+              <ul class="main-menu-wrap">
+                <li class="menu-item"><a href="#">About</a></li>
+                <li class="menu-item"><a href="#">Careers</a></li>
+                <li class="menu-item"><a href="#">Events</a></li>
+                <li class="menu-item"><a href="#">Products</a></li>
+                <li class="menu-item"><a href="#">Support</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-right">
+            <div class="social-wrap">
+              <div class="social-item">
+                <a href="#" aria-label="Facebook">
+                  <img src="./images/icon-facebook.svg" alt="facebook">
+                </a>
+              </div>
+              <div class="social-item">
+                <a href="#" aria-label="twitter">
+                  <img src="./images/icon-twitter.svg" alt="twitter">
+                </a>
+              </div>
+              <div class="social-item">
+                <a href="#" aria-label="Pinterest">
+                  <img src="./images/icon-pinterest.svg" alt="pinteres" >
+                </a>
+              </div>
+              <div class="social-item">
+                <a href="#" aria-label="Instagram">
+                  <img src="./images/icon-instagram.svg" alt="Instagram">
+                </a>
+              </div>
+            </div>
+            <div class="copyright">
+              © 2021 Loopstudios. All rights reserved.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-  See all
-
-  Deep earth
-  Night arcade
-  Soccer team VR
-  The grid
-  From up above VR
-  Pocket borealis
-  The curiosity
-  Make it fisheye
-
-  About
-  Careers
-  Events
-  Products
-  Support
-
-  © 2021 Loopstudios. All rights reserved.
-
-  <div class="attribution p-10 m-10">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </main>
   <script src="dist/app.js"></script>
 </body>
 </body>

@@ -7,17 +7,55 @@ module.exports = {
     // Add other paths to your templates or components here
   ],
   theme: {
+    screens: {
+      sm: '576px',
+      md: '768px',
+      lg: '992px',
+      xl: '1200px',
+      '2xl': '1400px',
+      '3xl': '1600px',
+      '4xl': '1920px'
+    },
+
     extend: {
       colors: {
-        customBlue: '#1E3A8A',
+        darkGray: 'hsl(0, 0%, 55%)',
+        veryDarkGray: 'hsl(0, 0%, 41%)'
       },
-      spacing: {
-        '72': '18rem',
-        '84': '21rem',
-        '96': '24rem',
+      fontFamily: {
+        'sans': ['Alata', 'Helvetica', 'Arial', 'sans-serif'],
+        'josefin-sans': ['Josefin Sans', 'Helvetica', 'Arial', 'sans-serif'],
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addComponents }) {
+      addComponents({
+        '.container': {
+          maxWidth: '100%',
+          marginLeft:'auto',
+          marginRight:'auto',
+          '@screen sm': {
+            maxWidth: 'calc(100% - 60px)',
+          },
+          '@screen md': {
+            maxWidth: 'calc(100% - 60px)',
+          },
+          '@screen lg': {
+            maxWidth: '85%',
+          },
+          '@screen xl': {
+            maxWidth: 'calc(100% - 120px)',
+          },
+          '@screen 2xl': {
+            maxWidth: 'calc(100% - 120px)',
+          },
+          '@screen 4xl': {
+            maxWidth: '1628px',
+          }
+        }
+      })
+    }
+  ],
 };
 

@@ -1,15 +1,12 @@
 const mix = require('laravel-mix');
 const tailwindcss = require('tailwindcss');
 
-
-
 mix.js('src/js/app.js', 'dist')
-.sass('src/scss/app.scss', 'dist', {
-    // Additional options can be passed here
-})
-.options({
-    postCss: [tailwindcss('./tailwind.config.js')],
-});
+   .sass('src/scss/app.scss', 'dist/app.css')
+   .options({
+       postCss: [tailwindcss('./tailwind.config.js')],
+   });
+
 
 mix.webpackConfig({
     watchOptions: {
@@ -26,8 +23,6 @@ if (!mix.inProduction()) {
 }
 
 if (mix.inProduction()) {
-    // Optimize production build
-    mix.version();
     mix.webpackConfig({
         optimization: {
             minimize: true,
@@ -36,4 +31,7 @@ if (mix.inProduction()) {
             },
         },
     });
+
+    // mix.version();
 }
+

@@ -1,0 +1,53 @@
+.header-fixed{
+    @apply absolute w-full pt-[50px] transition-colors;
+
+    .main-menu{
+        @apply hidden lg:flex w-full;
+    }
+
+    .mobile-menu-hamburger{
+        .menu-close{
+            @apply hidden;
+
+            &.active{
+                @apply block;
+            }
+        }
+
+        .menu-open{
+
+            &.hide{
+                @apply hidden;
+            }
+        }
+    }
+
+    
+
+    &.active{
+        @apply bg-black fixed h-screen;
+
+        .main-menu{
+            @apply flex items-center;
+            height: calc(100vh - 82px);
+        }
+    }
+}
+
+.menu-item{
+    @apply mb-12;
+
+    a{
+        @apply text-[24px] text-white font-josefin-sans uppercase leading-none;
+
+    }
+    
+    &:last-of-type{
+        @apply mb-0;
+    }
+}
+
+.nav-wrap{
+    @apply flex justify-between items-center flex-wrap;
+}
+
