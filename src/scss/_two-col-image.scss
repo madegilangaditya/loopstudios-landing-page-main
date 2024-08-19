@@ -1,0 +1,11 @@
+.two-col-image{
+    @apply pt-28 pb-16;
+
+    .text-wrap{
+        @apply text-center pt-16 px-2.5;
+        
+        h2{
+            @apply pb-5;
+        }
+    }
+}

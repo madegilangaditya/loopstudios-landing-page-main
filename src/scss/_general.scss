@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+h1, h2, h3{
+    @apply font-josefin-sans uppercase text-black text-[28px] leading-none;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,300;1,300&display=swap');
 
 body{
@@ -11,4 +15,12 @@ body{
 
 .container{
     @apply px-[30px];
+}
+
+.btn{
+    @apply min-w-[200px] border border-black p-4 text-center text-black uppercase tracking-[0.5em] transition-colors;
+
+    &:hover{
+        @apply bg-black text-white;
+    }
 }

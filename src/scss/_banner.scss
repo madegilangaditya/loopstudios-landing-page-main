@@ -1,0 +1,24 @@
+.banner{
+    @apply h-screen;
+
+    .banner-img{
+        @apply absolute h-full w-full object-cover;
+        z-index:-1;
+    }
+
+    .container{
+        @apply h-screen flex items-center;
+    }
+
+    .title-wrap{
+        @apply border-2 border-white py-8 px-[34px] w-full;
+
+        h1{
+            @apply font-josefin-sans uppercase text-white leading-none text-[35px];
+
+            @media (max-width:374px) {
+                @apply text-[27px];
+            }
+        }
+    }
+}

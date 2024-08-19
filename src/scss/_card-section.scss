@@ -1,0 +1,44 @@
+.cards{
+    @apply pt-16 pb-32;
+
+    .title-wrap{
+        @apply text-center lg:flex lg:justify-between lg:items-center lg:text-left pb-14;
+    }
+
+    .cards-wrap{
+        @apply grid lg:grid-cols-4 gap-[30px];
+    }
+
+    .card-item{
+        @apply relative;
+
+        img{
+            @apply absolute w-full h-full;
+            z-index: -1;
+        }
+
+        span{
+            @apply block pb-8 pt-16 px-7 text-[29px] font-josefin-sans text-white uppercase max-w-[215px] leading-none relative;
+        }
+
+        &:before {
+            @apply absolute w-full h-full z-0;
+            content:'';
+            background: linear-gradient(90deg, rgba(0,0,0,0.4990589985994398) 0%, rgba(0,0,0,0) 100%);
+        }
+
+        &:hover{
+            span{
+                @apply text-black;
+            }
+
+            &::before{
+                background: rgba(255, 255, 255, 0.50);
+            }
+        }
+    }
+
+    .btn-mobile-wrap{
+        @apply text-center mt-10;
+    }
+}

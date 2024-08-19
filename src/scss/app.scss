@@ -2,5 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@import '_general';
+@import 'general';
 @import 'header';
+@import 'banner';
+@import 'two-col-image';
+@import 'card-section';
+@import 'footer';
