@@ -42,17 +42,9 @@ module.exports = {
             maxWidth: 'calc(100% - 60px)',
           },
           '@screen lg': {
-            maxWidth: '85%',
-          },
-          '@screen xl': {
-            maxWidth: 'calc(100% - 120px)',
-          },
-          '@screen 2xl': {
-            maxWidth: 'calc(100% - 120px)',
-          },
-          '@screen 4xl': {
-            maxWidth: '1628px',
+            maxWidth: '1155px',
           }
+          
         }
       })
     }

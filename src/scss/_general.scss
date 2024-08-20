@@ -14,7 +14,7 @@ body{
 }
 
 .container{
-    @apply px-[30px];
+    @apply px-[30px] lg:px-5;
 }
 
 .btn{

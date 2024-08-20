@@ -1,8 +1,12 @@
 .header-fixed{
-    @apply absolute w-full pt-[50px] transition-colors;
+    @apply absolute w-full pt-[50px] lg:pt-[60px]  transition-colors;
 
     .main-menu{
-        @apply hidden lg:flex w-full;
+        @apply hidden lg:flex w-full lg:flex-initial lg:basis-0;
+
+        &-wrap{
+            @apply lg:flex lg:gap-8 lg:justify-end;
+        }
     }
 
     .mobile-menu-hamburger{
@@ -35,10 +39,10 @@
 }
 
 .menu-item{
-    @apply mb-12;
+    @apply mb-12 lg:mb-0;
 
     a{
-        @apply text-[24px] text-white font-josefin-sans uppercase leading-none;
+        @apply text-[24px] text-white font-josefin-sans uppercase leading-none lg:normal-case lg:font-sans lg:text-[18px];
 
     }
     

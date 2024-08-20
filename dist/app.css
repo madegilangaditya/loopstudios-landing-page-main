@@ -489,22 +489,7 @@ video {
 }
 @media (min-width: 992px){
   .container{
-    max-width: 85%;
-  }
-}
-@media (min-width: 1200px){
-  .container{
-    max-width: calc(100% - 120px);
-  }
-}
-@media (min-width: 1400px){
-  .container{
-    max-width: calc(100% - 120px);
-  }
-}
-@media (min-width: 1920px){
-  .container{
-    max-width: 1628px;
+    max-width: 1155px;
   }
 }
 .inline-block{
@@ -544,6 +529,13 @@ body{
   padding-right: 30px;
 }
 
+@media (min-width: 992px){
+  .container{
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
 .btn{
   min-width: 200px;
   border-width: 1px;
@@ -574,6 +566,12 @@ body{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+
+@media (min-width: 992px){
+  .header-fixed{
+    padding-top: 60px;
+  }
+}
 .header-fixed .main-menu{
   display: none;
   width: 100%;
@@ -581,6 +579,13 @@ body{
 @media (min-width: 992px){
   .header-fixed .main-menu{
     display: flex;
+    flex: 0 1 auto;
+    flex-basis: 0px;
+  }
+  .header-fixed .main-menu-wrap{
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
   }
 }
 .header-fixed .mobile-menu-hamburger .menu-close{
@@ -608,6 +613,12 @@ body{
 .menu-item{
   margin-bottom: 3rem;
 }
+
+@media (min-width: 992px){
+  .menu-item{
+    margin-bottom: 0px;
+  }
+}
 .menu-item a{
   font-family: Josefin Sans, Helvetica, Arial, sans-serif;
   font-size: 24px;
@@ -615,6 +626,13 @@ body{
   line-height: 1;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+@media (min-width: 992px){
+  .menu-item a{
+    font-family: Alata, Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    text-transform: none;
+  }
 }
 .menu-item:last-of-type{
   margin-bottom: 0px;
@@ -629,6 +647,12 @@ body{
 
 .banner{
   height: 100vh;
+}
+
+@media (min-width: 992px){
+  .banner{
+    padding-bottom: 145px;
+  }
 }
 .banner .banner-img{
   position: absolute;
@@ -653,6 +677,15 @@ body{
   padding-left: 34px;
   padding-right: 34px;
 }
+@media (min-width: 992px){
+  .banner .title-wrap{
+    max-width: 653px;
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+}
 .banner .title-wrap h1{
   font-family: Josefin Sans, Helvetica, Arial, sans-serif;
   font-size: 35px;
@@ -660,6 +693,11 @@ body{
   line-height: 1;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+@media (min-width: 992px){
+  .banner .title-wrap h1{
+    font-size: 62px;
+  }
 }
 @media (max-width: 374px) {
   .banner .title-wrap h1{
