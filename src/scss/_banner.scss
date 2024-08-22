@@ -1,23 +1,23 @@
 .banner{
-    @apply h-screen lg:pb-[145px];
+    @apply h-screen lg:h-auto lg:pb-[145px] lg:pt-56 relative;
 
     .banner-img{
-        @apply absolute h-full w-full object-cover;
+        @apply absolute h-full w-full object-cover top-0 object-top;
         z-index:-1;
     }
 
     .container{
-        @apply h-screen flex items-center;
+        @apply h-screen lg:h-auto flex items-center;
     }
 
     .title-wrap{
         @apply border-2 border-white py-8 px-[34px] w-full lg:max-w-[653px] lg:px-11 lg:py-10;
 
         h1{
-            @apply font-josefin-sans uppercase text-white leading-none text-[35px] lg:text-[62px];
+            @apply font-josefin-sans uppercase text-white leading-none text-[2.188rem] lg:text-[3.875rem];
 
             @media (max-width:374px) {
-                @apply text-[27px];
+                @apply text-[1.688rem];
             }
         }
     }

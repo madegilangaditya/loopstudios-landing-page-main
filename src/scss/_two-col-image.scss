@@ -1,11 +1,28 @@
 .two-col-image{
-    @apply pt-28 pb-16;
+    @apply pt-28 pb-16 lg:pt-40;
 
     .text-wrap{
-        @apply text-center pt-16 px-2.5;
+        @apply text-center pt-16 px-2.5 lg:text-left lg:pr-8 lg:pl-24 lg:pt-24;
         
         h2{
-            @apply pb-5;
+            @apply pb-5 lg:text-[3.125rem];
+        }
+    }
+
+    .column{
+        @apply lg:flex lg:items-end;
+
+        .col-left{
+            @apply lg:flex-auto lg:shrink-0 lg:max-w-[62%];
+
+            img{
+                @apply w-full;
+            }
+        }
+
+        .col-right{
+            @apply lg:ml-[-15%] lg:bg-white;
+
         }
     }
 }

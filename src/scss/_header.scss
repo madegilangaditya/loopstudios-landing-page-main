@@ -1,5 +1,5 @@
 .header-fixed{
-    @apply absolute w-full pt-[50px] lg:pt-[60px]  transition-colors;
+    @apply absolute w-full pt-[50px] lg:pt-[60px]  transition-colors z-10;
 
     .main-menu{
         @apply hidden lg:flex w-full lg:flex-initial lg:basis-0;
@@ -42,7 +42,19 @@
     @apply mb-12 lg:mb-0;
 
     a{
-        @apply text-[24px] text-white font-josefin-sans uppercase leading-none lg:normal-case lg:font-sans lg:text-[18px];
+        @apply text-[1.5rem] text-white font-josefin-sans uppercase leading-none lg:normal-case lg:font-sans lg:text-[1.125rem] relative;
+
+        &:after{
+            content: '';
+            @apply absolute w-6 h-[2px] bg-white left-1/2 bottom-[-8px] transition-opacity opacity-0;
+            transform: translateX(-50%);
+        }
+
+        &:hover{
+            &::after{
+                @apply opacity-100;
+            }
+        }
 
     }
     
